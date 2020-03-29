@@ -38,7 +38,7 @@ $(document).ready(function () {
     
     var cookieLayout = getCookie("switch-style");
     if (cookieLayout != "") {
-        $("#switch-style").attr("href", "/css/" + cookieLayout + ".css");
+        $("#switch-style").attr("href", "/css/grid.css");
     }
 
     // Style Switch index layout
