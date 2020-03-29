@@ -36,17 +36,14 @@ $(document).ready(function () {
         }
     });
     
-    var cookieLayout = getCookie("switch-style");
-    if (cookieLayout != "") {
-        $("#switch-style").attr("href", "/css/grid.css");
-    }
+    $("#switch-style").attr("href", "/css/grid.css");
 
     // Style Switch index layout
     $(".switch div").click(function () {
         var id = $(this).attr("id");
 
         // adjust link here
-        $("#switch-style").attr("href", "/css/" + id + ".css");
+        $("#switch-style").attr("href", "/css/grid.css");
         setCookie("switch-style", id, 365);
     });
 
