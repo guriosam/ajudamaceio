@@ -39,13 +39,13 @@ $(document).ready(function () {
     $("#switch-style").attr("href", "/css/grid.css");
 
     // Style Switch index layout
-    $(".switch div").click(function () {
-        var id = $(this).attr("id");
+    //$(".switch div").click(function () {
+    //    var id = $(this).attr("id");
 
         // adjust link here
-        $("#switch-style").attr("href", "/css/grid.css");
-        setCookie("switch-style", id, 365);
-    });
+    //    $("#switch-style").attr("href", "/css/grid.css");
+    //    setCookie("switch-style", id, 365);
+    //});
 
     var cookieColor = getCookie("color-change");
     if (cookieColor != "") {
