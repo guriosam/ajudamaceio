@@ -1,58 +1,97 @@
----
-layout: index-full
-description: Site de Divulgação das ONGs de Maceió
----
-{% for post in paginator.posts %}
-    {% include article_index.html %}
-{% endfor %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Ajuda Maceió - Plataforma de Doação</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Lilita+One&family=Rubik&family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="headerItems">
+            <h1><img src="img/colorLogo.svg"></h1>
+            <nav>
+                <div class="dropdown">
+                    <button onclick="menuFunction()" class="dropbtn">menu</button>
+                </div>
+                <!--<div class="dropdown">
+                    <button onclick="searchFunction()" class="dropbtn">search</button>
+                </div>-->
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="dropdownMenu" class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        <div id="dropdownSearch" class="searchBar">
+            <input type="text" placeholder="Busque um projeto ou organização">
+        </div>
+        <div class="landing">
+            <h2>Solidariedade é Cura</h2>
+            <p class="landingText">Ficar em casa durante a quarentena é a melhor ação que podemos tomar para combater essa pandemia de coronavírus. Mas se o seu espírito solidário quer fazer mais pelo nosso povo, saiba que é possível!</p>
 
-{% if paginator.total_pages > 1 %}
-    <div class="pagination">
-        <!-- link to first page -->
-        {% if paginator.total_pages > 3 %}
-            {% if paginator.page == 1 %}
-                <span class="btn disabled"><i class="fa fa-angle-double-left"></i></span>
-            {% else %}
-                <a class="btn" href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-angle-double-left"></i></a>
-            {% endif %}
-        {% endif %}
+            <div class="ctaButton">
+                <p>Faça uma doação</p>                
+            </div>
 
-        <!-- previous link -->
-        {% if paginator.previous_page %}
-            <a class="btn prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-angle-left"></i></a>
-        {% else %}
-            <span class="btn disabled"><i class="fa fa-angle-left"></i></span>
-        {% endif %}
+            <div class="ctaSecondButton">
+                <p>ou compartilhe essa iniciativa</p>
+            </div>
+        </div>
 
-        <!-- number links -->
-        {% capture start %}
-            {{ paginator.page | minus: 3 }}
-        {% endcapture %}
-
-        {% for i in (1..paginator.total_pages) limit: 5 offset: start %}
-            {% if i == paginator.page %}
-                <span class="btn disabled">{{ i }}</span>
-            {% elsif i == 1 %}
-                <a class="btn" href="{{ site.baseurl }}/">{{ i }}</a>
-            {% else %}
-                <a class="btn" href="/page/{{ i }}">{{ i }}</a>
-            {% endif %}
-        {% endfor %}
-
-        <!-- next link -->
-        {% if paginator.next_page %}
-            <a class="btn next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-angle-right"></i></a>
-        {% else %}
-            <span class="btn disabled"><i class="fa fa-angle-right"></i></span>
-        {% endif %}
-
-        <!-- last page link -->
-        {% if paginator.total_pages > 3 %}
-            {% if paginator.page == paginator.total_pages %}
-                <span class="btn disabled"><i class="fa fa-angle-double-right"></i></span>
-            {% else %}
-                <a class="btn" href="{{ site.baseurl | replace: '//', '/' }}/page/{{paginator.total_pages}}"><i class="fa fa-angle-double-right"></i></a>
-            {% endif %}
-        {% endif %}
-    </div>
-{% endif %}
+        <div class="projectSection">
+            <h3>Projetos & Organizações</h3>
+            <div class="projectGrid">                
+                <div class="projectBox">
+                    <div id="project1"></div>
+                    <h4>Projeto Erê</h4>                            
+                    <h5>Centro - Maceió</h5>
+                    <h6>Atende ao público</h6>
+                    <p>
+                        Crianças e Adolescentes em vulnerabilidade social 
+                    </p>
+                    <h6>Descrição</h6>
+                    <p>
+                        O Erê é uma ONG de natureza assistencial e de caráter sócio-educativo e cultural que atualmente trabalha com crianças e adolescentes em...
+                    </p>
+                    <div class="generalButton">
+                        <p>Ler mais</p>                
+                    </div>
+                </div>
+                <div class="projectBox">
+                    <div id="project1"></div>
+                    <h4>Projeto Erê</h4>                            
+                    <h5>Centro - Maceió</h5>
+                    <h6>Atende ao público</h6>
+                    <p>
+                        Crianças e Adolescentes em vulnerabilidade social 
+                    </p>
+                    <h6>Descrição</h6>
+                    <p>
+                        O Erê é uma ONG de natureza assistencial e de caráter sócio-educativo e cultural que atualmente trabalha com crianças e adolescentes em...
+                    </p>
+                    <div class="generalButton">
+                        <p>Ler mais</p>                
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="divider"></div>
+        <img class="footerLogo" src="img/whiteLogo.svg">
+        <nav>
+            <ul>
+                <li><img src="img/instaLogo.png"></li>
+                <li><img src="img/faceLogo.png"></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="js/principal.js"></script>
+</body>
+</html>
