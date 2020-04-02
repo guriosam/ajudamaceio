@@ -2,23 +2,29 @@
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajuda Maceió - Plataforma de Doação</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index-style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Lilita+One&family=Rubik&family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
 </head>
 <body>
     <header>
         <div class="headerItems">
             <h1><img src="img/colorLogo.svg"></h1>
-            <nav>
-                <div class="dropdown">
-                    <button onclick="menuFunction()" class="dropbtn">menu</button>
+            <nav><div class="row between-xs">
+                <div class="col-xs-2">
+                    <div class="dropdown">
+                        <button onclick="menuFunction()" class="dropbtn">menu</button>
+                    </div>
                 </div>
                 <!--<div class="dropdown">
                     <button onclick="searchFunction()" class="dropbtn">search</button>
                 </div>-->
+                </div>
+            </div>
             </nav>
         </div>
     </header>
@@ -46,7 +52,47 @@
 
         <div class="projectSection">
             <h3>Projetos & Organizações</h3>
-            <div class="projectGrid">                
+
+            <div class="row between-xs">
+                <div class="col-xs-6">
+                    <div class="projectBox">
+                        <div id="project1"></div>
+                        <h4>Projeto Erê</h4>                            
+                        <h5>Centro - Maceió</h5>
+                        <h6>Atende ao público</h6>
+                        <p>
+                            Crianças e Adolescentes em vulnerabilidade social 
+                        </p>
+                        <h6>Descrição</h6>
+                        <p>
+                            O Erê é uma ONG de natureza assistencial e de caráter sócio-educativo e cultural que atualmente trabalha com crianças e adolescentes em...
+                        </p>
+                        <div class="generalButton">
+                            <p>Ler mais</p>                
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="projectBox">
+                        <div id="project1"></div>
+                        <h4>Projeto Erê</h4>                            
+                        <h5>Centro - Maceió</h5>
+                        <h6>Atende ao público</h6>
+                        <p>
+                            Crianças e Adolescentes em vulnerabilidade social 
+                        </p>
+                        <h6>Descrição</h6>
+                        <p>
+                            O Erê é uma ONG de natureza assistencial e de caráter sócio-educativo e cultural que atualmente trabalha com crianças e adolescentes em...
+                        </p>
+                        <div class="generalButton">
+                            <p>Ler mais</p>                
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--<div class="projectGrid">                
                 <div class="projectBox">
                     <div id="project1"></div>
                     <h4>Projeto Erê</h4>                            
@@ -79,7 +125,7 @@
                         <p>Ler mais</p>                
                     </div>
                 </div>                
-            </div>
+            </div>-->
         </div>
     </main>
     <footer>
