@@ -97,6 +97,7 @@ header {
 
 main {
     background-color: hsl(0, 0%, 96%);
+    height: calc(100% - 132.64px);
 }
 
 .navMenu {
