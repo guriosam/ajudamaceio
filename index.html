@@ -2,95 +2,71 @@
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Ajuda Maceió - Plataforma de Doação</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index-style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Lilita+One&family=Rubik&family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
 </head>
 <body>
     <header>
-        <div class="headerItems">
-            <h1><img src="img/colorLogo.svg"></h1>
-            <nav><div class="row between-xs">
-                <div class="col-xs-2">
-                    <div class="dropdown">
-                        <button onclick="menuFunction()" class="dropbtn">menu</button>
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="logoHeader"><img src="img/colorLogo.svg"></h1>
                 </div>
-                <!--<div class="dropdown">
-                    <button onclick="searchFunction()" class="dropbtn">search</button>
-                </div>-->
+                <div class="col">
+                    <nav class="navBar">
+                        <!-- <div class="dropdown">
+                            <p onclick="searchFunction()" class="dropbtn">search</p>
+                        </div>   -->
+                        <div class="dropdown">
+                            <p onclick="menuFunction()" class="dropbtn">menu</p>
+                        </div>
+                    </nav>
                 </div>
-            </div>
-            </nav>
-        </div>
+            </div>            
+        </div>                                             
     </header>
     <main>
-        <div id="dropdownMenu" class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-        </div>
-        <div id="dropdownSearch" class="searchBar">
-            <input type="text" placeholder="Busque um projeto ou organização">
-        </div>
-        <div class="landing">
-            <h2>Solidariedade é Cura</h2>
-            <p class="landingText">Ficar em casa durante a quarentena é a melhor ação que podemos tomar para combater essa pandemia de coronavírus. Mas se o seu espírito solidário quer fazer mais pelo nosso povo, saiba que é possível!</p>
-
-            <div class="ctaButton">
-                <p>Faça uma doação</p>                
+        <div class="container">
+            <div class="navMenu row">                
+                <div id="dropdownMenu" class="dropdown-content">
+                    <a href="#">Quem Somos</a>
+                    <a href="#">Contato</a>
+                </div>
+                <div id="dropdownSearch" class="searchBar">
+                    <input type="text" placeholder="Busque um projeto ou organização">
+                </div>                
             </div>
-
-            <div class="ctaSecondButton">
-                <p>ou compartilhe essa iniciativa</p>
+            <div class="hero row">
+                <h2>Solidariedade é Cura</h2>
+                <p class="heroText">Ficar em casa durante a quarentena é a melhor ação que podemos tomar para combater essa pandemia de coronavírus. Mas se o seu espírito solidário quer fazer mais pelo nosso povo, saiba que é possível!</p>
+                <div class="ctaButton">
+                    <p>Faça uma doação</p>                
+                </div>
+                <div class="ctaSecondButton">
+                    <p>ou compartilhe essa iniciativa</p>
+                </div>
             </div>
-        </div>
-
-        <div class="projectSection">
-            <h3>Projetos & Organizações</h3>
-
-            <div class="row between-xs">
-                <div class="col-xs-6">
-                    <div class="projectBox">
-                        <div id="project1"></div>
+            <h3 class="titleSection">Projetos & Organizações</h3>
+            <div class="projectSection row">                
+                <div class="projectBox col">
+                    <div id="project1" class="projectImg col"></div>
+                    <div class="col-8">
                         <h4>Projeto Erê</h4>                            
                         <h5>Centro - Maceió</h5>
                         <h6>Atende ao público</h6>
-                        <p>
-                            Crianças e Adolescentes em vulnerabilidade social 
-                        </p>
-                        <h6>Descrição</h6>
-                        <p>
-                            O Erê é uma ONG de natureza assistencial e de caráter sócio-educativo e cultural que atualmente trabalha com crianças e adolescentes em...
-                        </p>
-                        <div class="generalButton">
+                        <p>Crianças e Adolescentes em vulnerabilidade social</p>
+                        <!-- <div class="generalButton">
                             <p>Ler mais</p>                
-                        </div>
+                        </div> -->
                     </div>
-                </div>
-                <div class="col-xs-6">
-                    <div class="projectBox">
-                        <div id="project1"></div>
-                        <h4>Projeto Erê</h4>                            
-                        <h5>Centro - Maceió</h5>
-                        <h6>Atende ao público</h6>
-                        <p>
-                            Crianças e Adolescentes em vulnerabilidade social 
-                        </p>
-                        <h6>Descrição</h6>
-                        <p>
-                            O Erê é uma ONG de natureza assistencial e de caráter sócio-educativo e cultural que atualmente trabalha com crianças e adolescentes em...
-                        </p>
-                        <div class="generalButton">
-                            <p>Ler mais</p>                
-                        </div>
-                    </div>
-                </div>
-            </div>
+                </div>           
+            </div>                
+           
             
             <!--<div class="projectGrid">                
                 <div class="projectBox">
@@ -139,5 +115,8 @@
         </nav>
     </footer>
     <script src="js/principal.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

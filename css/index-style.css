@@ -2,42 +2,49 @@ h3, h4, h5, h6, p, a{
     font-family: 'Rubik', sans-serif;
     font-size: 12px;
     line-height: normal;
+    margin: 0;
+}
+
+::placeholder {
+    color: hsl(140, 65%, 80%);
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+        color: hsl(140, 65%, 80%);
+}
+
+::-ms-input-placeholder {
+    color: hsl(140, 65%, 80%);
 }
 
 /*HEADER*/
 
-.headerItems {
-    height: 40px;
-    padding: 24px 12px 0 12px;
-    box-shadow: 4px 4px 16px hsla(0, 0%, 0%, 0.12);;
+header {
+    box-shadow: 4px 4px 16px hsla(0, 0%, 0%, 0.12);
 }
 
-.headerItems h1 {
-    position: absolute;
+.logoHeader {
+    display: inline-block;
     width: 140px;
-    top: 8px;
-    left: calc(50% - 70px);
-
 }
 
-.headerItems nav {
-    display: block;
+.navBar {
+     display: flex;
+     justify-content: flex-end;
 }
 
 .dropdown {
-    position: relative;
     display: inline;
+    padding-top: 18px ;
 }
 
 .dropbtn {
     font-family: 'Material Icons';
     font-size: 24px;  /* Preferred icon size */
-    text-decoration: none;
     color: hsl(191,75%,44%);
     cursor: pointer;
-    padding: 0;
-    border: none;
-    background: none;
+    margin: 0 0 0 8px;
 }
 
 .dropdown p:hover, .dropdown p:focus {
@@ -52,6 +59,7 @@ h3, h4, h5, h6, p, a{
     box-shadow: 4px 4px 16px hsla(191, 96%, 16%, 0.32),
                 4px 4px 8px hsla(191, 96%, 16%, 0.12);
     z-index: 2;
+    right: 0;
 }
 
 .dropdown-content a{
@@ -67,39 +75,46 @@ h3, h4, h5, h6, p, a{
 
 .searchBar {
     display: none;
-    position: absolute;
-    background-color: hsl(162,73%,28%);
-    box-shadow: 4px 4px 16px hsla(191, 96%, 16%, 0.32),
-                4px 4px 8px hsla(191, 96%, 16%, 0.12);
     z-index: 1;
 }
 
 .searchBar input{
     color: white;
-    background-color: hsl(162,73%,28%);
-    padding: 8px 12px;
-    width: 100vw;
+    background-color: hsl(160,41%,54%);
+    padding: 12px 20px;
     border: none;
+    width: 100%;
     display: block;
-    
+    box-shadow: 4px 4px 16px hsla(191, 96%, 16%, 0.32),
+    4px 4px 8px hsla(191, 96%, 16%, 0.12);
 }
 
 .show{
-    display: block;
+    display: inline-block;
 }
 
 /*MAIN*/
 
-.landing {
-    padding: 40px 12px;
-    background-image: url(../img/landingImg.jpg);
-    background-size: cover;
-    background-position: 20% 50%;
-    background-repeat: no-repeat;
-    text-align: center;
+main {
+    background-color: hsl(0, 0%, 96%);
 }
 
-.landing h2 {
+.navMenu {
+    min-height: 0;
+}
+
+.hero {
+    padding: 40px 15px;
+    background-image: url(../img/heroImg.jpg);
+    background-size: cover;
+    background-position-x: 75%;
+    background-repeat: no-repeat;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero h2 {
     text-align: center;
     margin-bottom: 12px;
     font-family:"Signika Negative", sans-serif;
@@ -108,12 +123,13 @@ h3, h4, h5, h6, p, a{
     text-shadow: 0px 4px 0px hsla(191, 96%, 16%,0.32);
 }
 
-.landingText {
+.heroText {
+    font-size: 16px;
     color: white;
     display: inline-block;
     line-height: 1.15em;
-    text-shadow: 0px 4px 8px hsla(191, 96%, 16%,0.32);
-    margin-bottom: 2em;
+    text-shadow: 0px 2px 4px hsl(191, 96%, 12%);
+    margin-bottom: 2.5em;
 }
 
 .ctaButton {
@@ -122,7 +138,7 @@ h3, h4, h5, h6, p, a{
     width: max-content;
     display: block;
     padding: 16px 20px;
-    background-color: hsla(4, 80%, 59%, 0.88);
+    background-color: hsl(4, 80%, 59%);
     border-radius: 40px;
     box-shadow: 4px 4px 16px hsla(191, 96%, 16%, 0.32),
                 4px 4px 8px hsla(191, 96%, 16%, 0.12);
@@ -133,6 +149,7 @@ h3, h4, h5, h6, p, a{
     color: white;
     font-weight: 900;
     text-transform: uppercase;
+    text-shadow: 0 4px 8px hsla(4, 80%, 16%, 0.4);
 }
 
 .ctaSecondButton {
@@ -141,10 +158,13 @@ h3, h4, h5, h6, p, a{
     border: solid hsl(43, 98%, 60%);
     border-radius: 40px;
     border-width: 2px;
+    width: max-content;
+    margin: 0 auto;
 }
 
 .ctaSecondButton p{
     color: white;
+    text-shadow: 0px 2px 4px hsl(191, 96%, 12%);
 
 }
 
@@ -152,39 +172,42 @@ h3, h4, h5, h6, p, a{
     padding: 20px 12px;
 }
 
-.projectSection h3{
+.titleSection{
     font-size: 16px;
     font-weight: 700;
     color: hsl(191,75%,44%);
-    margin-bottom: 1em;
+    margin-top: 20px;
 }
 
 .projectBox{
-    display: inline-block;
+    display: flex;
     text-align: left;
-    padding: 8px;
     border-radius: 8px;
-    box-shadow: 4px 4px 12px hsla(0, 0%, 0%, 0.12),
+    background-color: hsl(0, 0%, 98%);
+    box-shadow: 4px 4px 16px hsla(0, 0%, 0%, 0.08),
                 4px 4px 4px hsla(0, 0%, 0%, 0.04);
+    padding: 12px 0;
+    margin-bottom: 16px;
+    flex-direction: row;
 }
 
-#project1 {
-    height: 80px;
-    margin-bottom: 12px;
+.projectImg {
     border-radius: 4px;
     background-image: url(../img/project1Img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    margin-left: 15px;
 }
 
 .projectBox h4{
+    font-size: 16px;
     font-weight: bold;
     color: hsl(191, 96%, 24%);
     margin-bottom: 4px;
 }
 
 .projectBox h5{
-    font-size: 8px;
+    font-size: 10px;
     color: hsl(29, 96%, 44%);
     margin-bottom: 8px;
 }
@@ -200,7 +223,7 @@ h3, h4, h5, h6, p, a{
 }
 
 .generalButton {
-    width: 80px;
+    width: 75%;
     display: block;
     padding: 16px 12px;
     background-color: hsl(4, 80%, 59%);
@@ -227,7 +250,7 @@ footer{
 
 .divider{
     height: 4px;
-    width: 100vw;
+    width: 100%;
     background-color: hsl(43, 98%, 60%);
     position: absolute;
     top: -2px;
@@ -256,11 +279,15 @@ footer li img{
     margin-left: 8px;
 }
 
-
-@media  (min-width: 800px) {
+/* @media  (min-width: 768px) {
 
     .headerItems{
-        padding: 24px 20px 0 20px;
+        padding: 12px 20px 0 20px;
+    }
+
+    .searchBar{
+        position: absolute;
+        width: 100%;
     }
 
 
@@ -282,20 +309,20 @@ footer li img{
     }
 
     .ctaButton{
-        margin: 0 0 24px 0;
-        padding: 20px 24px;
+        margin: 0 0 20px 0;
+        padding: 16px 20px;
     }
 
     .ctaButton p{
-        font-size: 24px;
+        font-size: 16px;
     }
 
     .ctaSecondButton{
-        padding: 12px 16px;
+        padding: 8px 12px;
     }
  
     h3, h4, h5, h6, p{
         font-size: 16px;
     }
 
-}
+} */
