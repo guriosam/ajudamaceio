@@ -1,0 +1,191 @@
+html, body{
+    height: 100%;
+}
+
+h3, h4, h5, h6, p, a{
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    line-height: normal;
+    margin: 0;
+}
+
+::placeholder {
+    color: hsl(140, 65%, 80%);
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+        color: hsl(140, 65%, 80%);
+}
+
+::-ms-input-placeholder {
+    color: hsl(140, 65%, 80%);
+}
+
+/*HEADER*/
+
+header {
+    box-shadow: 4px 4px 16px hsla(0, 0%, 0%, 0.12);
+}
+
+.logoHeader {
+    display: inline-block;
+    width: 140px;
+}
+
+.navBar {
+     display: flex;
+     justify-content: flex-end;
+}
+
+.dropdown {
+    display: inline;
+    padding-top: 18px ;
+}
+
+.dropbtn {
+    font-family: 'Material Icons';
+    font-size: 24px;  /* Preferred icon size */
+    color: hsl(191,75%,44%);
+    cursor: pointer;
+    margin: 0 0 0 8px;
+}
+
+.dropdown p:hover, .dropdown p:focus {
+    color: hsl(191,96%,24%);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: hsl(162,73%,28%);
+    width: max-content;
+    box-shadow: 4px 4px 16px hsla(191, 96%, 16%, 0.32),
+                4px 4px 8px hsla(191, 96%, 16%, 0.12);
+    z-index: 2;
+    right: 0;
+}
+
+.dropdown-content a{
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background-color: hsl(160,41%,54%);
+}
+
+.searchBar {
+    display: none;
+    z-index: 1;
+}
+
+.searchBar input{
+    color: white;
+    background-color: hsl(160,41%,54%);
+    padding: 12px 20px;
+    border: none;
+    width: 100%;
+    display: block;
+    box-shadow: 4px 4px 16px hsla(191, 96%, 16%, 0.32),
+    4px 4px 8px hsla(191, 96%, 16%, 0.12);
+}
+
+.show{
+    display: inline-block;
+}
+
+/*MAIN*/
+
+main {
+    background-color: hsl(0, 0%, 96%);
+    height: calc(100% - 132.64px);
+}
+
+
+.navMenu {
+    min-height: 0;
+}
+
+.iframeResize {
+    overflow: hidden;
+    padding-top: 158%;
+    position: relative;
+}
+   
+.iframeResize iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.titleSection{
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(191,75%,44%);
+    margin-top: 20px;
+    margin-bottom: 1em;
+}
+
+.generalButton {
+    width: 75%;
+    display: block;
+    padding: 16px 12px;
+    background-color: hsl(4, 80%, 59%);
+    border-radius: 40px;
+    box-shadow: 4px 4px 12px hsla(0, 0%, 0%, 0.16),
+                4px 4px 4px hsla(0, 0%, 0%, 0.08);
+    margin: 16px auto 8px auto;
+    text-align: center;
+}
+
+.generalButton p{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+}
+/*FOOTER*/
+
+footer{
+    background-color: hsl(191, 96%, 24%);
+    padding: 20px 12px;
+    position: relative;
+    bottom: 0;
+}
+
+.divider{
+    height: 4px;
+    width: 100%;
+    background-color: hsl(43, 98%, 60%);
+    position: absolute;
+    top: -2px;
+    left: 0;
+
+}
+
+.footerLogo {
+    width: 100px;
+}
+
+footer nav{
+    display: inline-block;
+    vertical-align: center;
+    position: absolute;
+    right: 0;
+    margin: 2.75px 12px 0 0;
+}
+
+footer li{
+    display: inline-block;
+}
+
+footer li img{
+    height: 24px;
+    margin-left: 8px;
+}
