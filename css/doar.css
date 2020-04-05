@@ -1,12 +1,9 @@
-html, body{
-    height: 100%;
-}
-
 h3, h4, h5, h6, p, a{
     font-family: 'Rubik', sans-serif;
     font-size: 12px;
     line-height: normal;
     margin: 0;
+    text-decoration: none;
 }
 
 ::placeholder {
@@ -113,16 +110,75 @@ main {
     min-height: 0;
 }
 
+.bgTitle { 
+    background-color: hsl(162,73%,28%);
+  }
+
+.bgRound {
+    height: 44px;
+    background-color: hsl(162,73%,28%);
+    border-radius: 50%/70% 70% 0 0;
+    transform: rotateX(180deg);
+    box-shadow: 0 8px 8px inset hsla(191, 96%, 16%, 0.32);
+}
+
+.projectSection{
+    padding: 20px 12px;
+}
+
 .titleSection{
     font-size: 16px;
     font-weight: 700;
-    color: hsl(191,75%,44%);
-    margin-top: 20px;
-    margin-bottom: 1em;
+    color: hsl(144,54%,70%);
+    margin: 20px 0 1em 0;
 }
 
-.quemSomos{
-    color: hsl(191,75%,44%);
+.bodyLightGreen{
+    color: hsl(140,65%,80%);
+    margin-bottom: 4px;
+}
+
+.projectBox{
+    display: flex;
+    text-align: left;
+    border-radius: 4px;
+    background-color: hsl(0, 0%, 98%);
+    box-shadow: 4px 4px 16px hsla(0, 0%, 0%, 0.08),
+                4px 4px 4px hsla(0, 0%, 0%, 0.04);
+    padding: 12px 0;
+    margin-bottom: 16px;
+    flex-direction: row;
+}
+
+.projectImg {
+    border-radius: 2px;
+    background-image: url(../img/project1Img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 15px;
+}
+
+.projectBox h4{
+    font-size: 16px;
+    font-weight: bold;
+    color: hsl(191, 96%, 24%);
+    margin-bottom: 4px;
+}
+
+.projectBox h5{
+    font-size: 10px;
+    color: hsl(29, 96%, 44%);
+    margin-bottom: 8px;
+}
+
+.projectBox h6{
+    color: hsl(194, 73%, 55%);
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+.projectBox p{
+    color: hsl(191, 81%, 33%);
+    margin-bottom: 8px;
 }
 
 .generalButton {
@@ -149,7 +205,6 @@ footer{
     background-color: hsl(191, 96%, 24%);
     padding: 20px 12px;
     position: relative;
-    bottom: 0;
 }
 
 .divider{
@@ -182,51 +237,3 @@ footer li img{
     height: 24px;
     margin-left: 8px;
 }
-
-/* @media  (min-width: 768px) {
-
-    .headerItems{
-        padding: 12px 20px 0 20px;
-    }
-
-    .searchBar{
-        position: absolute;
-        width: 100%;
-    }
-
-
-    .landing{
-        text-align: left;
-        padding: 40px 20px;
-        background-position-x: 0%;
-    }
-
-    .landing h2{
-        margin: 80px 0 16px 0;
-        font-size: 36px;
-        text-align: left;
-    }
-
-    .landingText{
-        font-size: 20px;
-        width: 40%;
-    }
-
-    .ctaButton{
-        margin: 0 0 20px 0;
-        padding: 16px 20px;
-    }
-
-    .ctaButton p{
-        font-size: 16px;
-    }
-
-    .ctaSecondButton{
-        padding: 8px 12px;
-    }
- 
-    h3, h4, h5, h6, p{
-        font-size: 16px;
-    }
-
-} */

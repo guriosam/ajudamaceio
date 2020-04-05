@@ -2,7 +2,7 @@ html, body{
     height: 100%;
 }
 
-h3, h4, h5, h6, p, a{
+h3, h4, h5, h6, p, a, li{
     font-family: 'Rubik', sans-serif;
     font-size: 12px;
     line-height: normal;
@@ -44,7 +44,7 @@ header {
 
 .dropdown {
     display: inline;
-    padding-top: 10px;
+    padding-top: 10px ;
     vertical-align: center;
 }
 
@@ -106,23 +106,149 @@ header {
 
 main {
     background-color: hsl(0, 0%, 96%);
-    height: calc(100% - 132.64px);
 }
 
 .navMenu {
     min-height: 0;
 }
 
-.titleSection{
+.breadcrumb{
+    background-color: hsl(0, 0%, 99%);
+    margin-bottom: 0;
+    border-radius: 0;
+    width: 100%;
+    padding: .5em 15px;
+    box-shadow: 0 2px 12px hsla(0, 0%, 0%, 0.04);
+}
+
+.breadcrumb-item a{
+    color: hsl(191,0%,75%);
+}
+
+.breadcrumb-item.active{
+    vertical-align: center;
+    font-weight: bold;
+    color: hsl(191,75%,44%);
+}
+
+.breadcrumb-item.active::before{
+    color: hsl(191,0%,75%);
+}
+
+
+.projectBg {
+    background-image: url(../img/project1Img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+}
+
+.iframeResize {
+    overflow: hidden;
+    padding-top: 158%;
+    position: relative;
+}
+   
+.iframeResize iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.verticalDir {
+    flex-direction: column;
+}
+
+.titleSectionBlue{
     font-size: 16px;
     font-weight: 700;
     color: hsl(191,75%,44%);
     margin-top: 20px;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
 }
 
-.quemSomos{
+.titleSectionGreen{
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(162,73%,28%);
+    margin-bottom: .5em;
+    text-align: center;
+}
+
+.titleSectionOrange{
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(18,96%,24%);
+    margin-bottom: .5em;
+    text-align: center;
+}
+
+.dividerGreen{
+    height: 1px;
+    width: 100%;
+    background-color: hsl(144,54%,70%);
+    margin-bottom: .5em;
+}
+
+.dividerOrange{
+    height: 1px;
+    width: 100%;
+    background-color: hsl(11,98%,77%);
+    margin-bottom: .5em;
+}
+
+.titleBlue{
+    text-transform: uppercase;
+    color: hsl(194,96%,71%);
+    margin-bottom: 8px;
+}
+
+.titleGreen{
+    text-transform: uppercase;
+    color: hsl(160,41%,54%);
+    margin-bottom: 8px;
+}
+
+.titleOrange{
+    text-transform: uppercase;
+    color: hsl(4,80%,59%);
+    margin-bottom: 8px;
+}
+
+.bodyBlue{
     color: hsl(191,75%,44%);
+    margin-bottom: 16px;
+}
+
+.bodyGreen{
+    color: hsl(162,53%,39%);
+    margin-bottom: 16px;
+}
+
+.bodyOrange{
+    color: hsl(29,95%,44%);
+    margin-bottom: 16px;
+}
+
+.center {
+    align-self: center;
+}
+
+.bgGreen{
+    background-color: hsl(140, 65%, 80%);
+    border-radius: 8px;
+    padding-top: 12px;
+    margin: 12px 0;
+}
+
+.bgOrange{
+    background-color: hsl(22, 94%, 81%);
+    border-radius: 8px;
+    padding-top: 12px;
+    margin: 12px 0;
 }
 
 .generalButton {
@@ -159,7 +285,6 @@ footer{
     position: absolute;
     top: -2px;
     left: 0;
-
 }
 
 .footerLogo {
@@ -178,55 +303,8 @@ footer li{
     display: inline-block;
 }
 
-footer li img{
+.socialLogo{
     height: 24px;
     margin-left: 8px;
+    width: 24px;
 }
-
-/* @media  (min-width: 768px) {
-
-    .headerItems{
-        padding: 12px 20px 0 20px;
-    }
-
-    .searchBar{
-        position: absolute;
-        width: 100%;
-    }
-
-
-    .landing{
-        text-align: left;
-        padding: 40px 20px;
-        background-position-x: 0%;
-    }
-
-    .landing h2{
-        margin: 80px 0 16px 0;
-        font-size: 36px;
-        text-align: left;
-    }
-
-    .landingText{
-        font-size: 20px;
-        width: 40%;
-    }
-
-    .ctaButton{
-        margin: 0 0 20px 0;
-        padding: 16px 20px;
-    }
-
-    .ctaButton p{
-        font-size: 16px;
-    }
-
-    .ctaSecondButton{
-        padding: 8px 12px;
-    }
- 
-    h3, h4, h5, h6, p{
-        font-size: 16px;
-    }
-
-} */
