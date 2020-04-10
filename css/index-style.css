@@ -1,3 +1,7 @@
+html, body{
+    height: 100%;
+}
+
 h3, h4, h5, h6, p, a{
     font-family: 'Rubik', sans-serif;
     font-size: 12px;
@@ -21,11 +25,13 @@ h3, h4, h5, h6, p, a{
 
 /*HEADER*/
 
-header {
-    box-shadow: 4px 4px 16px hsla(0, 0%, 0%, 0.12);
+.bgHeader{
+    position: relative;
 }
 
 .headerRow {
+    width: 100%;
+    position: absolute;
     padding: 12px 0;
 }
 
@@ -48,13 +54,13 @@ header {
 .dropbtn {
     font-family: 'Material Icons';
     font-size: 24px;  /* Preferred icon size */
-    color: hsl(191,75%,44%);
+    color: white;
     cursor: pointer;
     margin: 0 0 0 8px;
 }
 
 .dropdown p:hover, .dropdown p:focus {
-    color: hsl(191,96%,24%);
+    color: hsl(160,41%,54%);
 }
 
 .dropdown-content {
@@ -65,7 +71,8 @@ header {
     box-shadow: 4px 4px 16px hsla(191, 96%, 16%, 0.32),
                 4px 4px 8px hsla(191, 96%, 16%, 0.12);
     z-index: 2;
-    right: 0;
+    right: 15px;
+    top: 44px;
 }
 
 .dropdown-content a{
@@ -103,19 +110,26 @@ header {
 
 main {
     background-color: hsl(0, 0%, 96%);
-    height: calc(100% - 132.64px);
+    height: 100%
 }
 
-.navMenu {
-    min-height: 0;
-}
-
-.hero {
-    padding: 40px 15px;
+.bgHero{
     background-image: url(../img/heroImg.jpg);
     background-size: cover;
     background-position-x: 75%;
     background-repeat: no-repeat;
+    width: 100%;
+    max-width: 100vw;
+    padding: 72px 15px 0 15px;
+}
+
+.sm-to-xl{
+    position: relative;
+}
+
+.hero {
+    justify-self: center;
+    padding: 40px 15px;
     text-align: center;
     justify-content: center;
     flex-direction: column;
@@ -170,6 +184,8 @@ main {
     border: solid hsl(43, 98%, 60%);
     border-radius: 40px;
     border-width: 2px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     margin: 0 auto;
 }
@@ -255,7 +271,7 @@ main {
 /*FOOTER*/
 
 footer{
-    background-color: hsl(191, 96%, 24%);
+    background-color: hsl(191, 96%, 13%);
     padding: 20px 12px;
     position: relative;
 }
@@ -291,3 +307,67 @@ footer li img{
     margin-left: 8px;
 }
 
+@media screen and (min-width: 576px) {
+        .sm-to-xl{
+        margin: 0 auto;
+        max-width: 540px;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .dropdown-content{
+        min-width: 20%;
+    }
+    
+    .bgHero{
+        height: 40%;
+        background-position-y:30% ;
+    }
+    
+    .sm-to-xl{
+        margin: 0 auto;
+        max-width: 720px;
+    }
+
+    .hero{
+        text-align: left;
+        justify-content: left;
+        width: 55%;
+    }
+
+    .hero h2{
+        text-align: left;
+    }
+
+    .ctaButton{
+        margin: 0 0 16px 0;
+    }
+    
+}
+
+@media screen and (min-width: 992px) {
+    .dropdown-content{
+        min-width: 15%;
+    }
+    
+    .sm-to-xl{
+        margin: 0 auto;
+        max-width: 960px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .bgHero{
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        background-position-y:40% ;
+    }
+
+    .sm-to-xl{
+        
+        margin: 0 auto;
+        max-width: 1140px;
+    }
+}

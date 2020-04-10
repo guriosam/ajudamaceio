@@ -12,10 +12,10 @@
 </head>
 <body>
     <header>        
-        <div class="container">
+        <div class="bgHeader container">
             <div class="headerRow row">
                 <div class="col">
-                    <img class="logoHeader" src="img/colorLogo.svg">
+                    <img class="logoHeader" src="img/whiteLogo.svg">
                 </div>
                 <div class="col">
                     <nav class="navBar">
@@ -27,11 +27,7 @@
                         </div>
                     </nav>
                 </div>
-            </div>            
-        </div>                                             
-    </header>
-    <main>
-        <div class="container">
+            </div>
             <div class="navMenu row">                
                 <div id="dropdownMenu" class="dropdown-content">
                     <a href="pages/quemsomos.html">Quem Somos</a>
@@ -42,18 +38,26 @@
                     <input type="text" placeholder="Busque um projeto ou organização">
                 </div>                
             </div>
-            <div class="hero row">
-                <h2>Solidariedade é Cura</h2>
-                <p class="heroText">Ficar em casa durante a quarentena é a melhor ação que podemos tomar para combater essa pandemia de coronavírus. Mas se o seu espírito solidário quer fazer mais pelo nosso povo, saiba que é possível!</p>
-                <a class="ctaButton" href="pages/doar.html">
-                    <p>Faça uma doação</p>                
-                </a>
-                <!-- <div class="ctaSecondButton">
-                    <p>ou compartilhe essa iniciativa</p>
-                </div> -->
+        </div>                                             
+    </header>
+    <main>        
+        <div class="bgHero">
+            <div class="containter sm-to-xl">
+                <div class="hero row">
+                    <h2>Solidariedade é Cura</h2>
+                    <p class="heroText">Ficar em casa durante a quarentena é a melhor ação que podemos tomar para combater essa pandemia de coronavírus. Mas se o seu espírito solidário quer fazer mais pelo nosso povo, saiba que é possível!</p>
+                    <a class="ctaButton" href="pages/doar.html">
+                        <p>Faça uma doação</p>                
+                    </a>
+                    <!-- <div class="ctaSecondButton">
+                        <p>ou compartilhe essa iniciativa</p>
+                    </div> -->
+                </div>
             </div>
-            <h3 class="titleSection">Projetos & Organizações</h3>
-            <div class="projectSection row">                
+        </div>
+        <div class="container">
+            <h3 class="titleSection">Projetos & Organizações</h3> 
+            <div class="projectSection row">                               
                 <a href="pages/projetos/projeto015.html"><div class="projectBox col">
                     <div id="project1" class="projectImg col"></div>
                     <div class="col-8">
@@ -68,13 +72,15 @@
     </main>
     <footer>
         <div class="divider"></div>
-        <a href="#top"><img class="footerLogo" src="img/whiteLogo.svg"></a>
-        <nav>
-            <ul>
-                <li><img src="img/instaLogo.png"></li>
-                <li><img src="img/faceLogo.png"></li>
-            </ul>
-        </nav>
+        <div class="sm-to-xl">
+            <a href="#top"><img class="footerLogo" src="img/colorLogo.svg"></a>
+            <nav>
+                <ul>
+                    <li><img src="img/instaLogo.png"></li>
+                    <li><img src="img/faceLogo.png"></li>
+                </ul>
+            </nav>
+        </div>  
     </footer>
     <script src="js/principal.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
