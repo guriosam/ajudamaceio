@@ -24,6 +24,11 @@ h3, h4, h5, h6, p, a{
     color: hsl(140, 65%, 80%);
 }
 
+.row, .col {
+    margin: 0;
+    padding: 0;
+}
+
 /*HEADER*/
 
 header {
@@ -71,13 +76,13 @@ header {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: hsl(162,73%,28%);
+    background-color: hsl(191,96%,13%);
     min-width: 30%;
     box-shadow: 4px 4px 16px hsla(191, 96%, 16%, 0.32),
                 4px 4px 8px hsla(191, 96%, 16%, 0.12);
     z-index: 2;
-    right: 15px;
-    top: -16px;
+    right: -15px;
+    top: -24px;
 }
 
 .dropdown-content a{
@@ -88,7 +93,7 @@ header {
 }
 
 .dropdown-content a:hover{
-    background-color: hsl(160,41%,54%);
+    background-color: hsl(191,75%,44%);
 }
 
 .searchBar {
@@ -115,7 +120,8 @@ header {
 
 main {
     background-color: hsl(0, 0%, 96%);
-    height: calc(100% - 132.64px);
+    height: fit-content;
+    padding-bottom: 80px;
 }
 
 .navMenu {
@@ -198,7 +204,6 @@ footer{
     background-color: hsl(191, 96%, 13%);
     padding: 20px 12px;
     position: relative;
-    bottom: 0;
     justify-content: space-between;
 }
 
@@ -230,6 +235,10 @@ footer li img{
 }
 
 @media screen and (min-width: 576px) {
+    main{
+        height: 100%;
+    }
+    
     .sm-to-xl{
     margin: 0 auto;
     max-width: 540px;
@@ -238,6 +247,11 @@ footer li img{
 }
 
 @media screen and (min-width: 768px) {
+
+h2, h3, h4, h5, h6, p, a{
+    font-size: 16px;   
+}
+
 .dropdown-content{
     min-width: 20%;
 }

@@ -139,7 +139,7 @@ main {
     text-align: center;
     margin-bottom: 12px;
     font-family:"Signika Negative", sans-serif;
-    font-size: 28px;
+    font-size: 32px;
     color: white;
     text-shadow: 0px 4px 0px hsla(191, 96%, 16%,0.32);
 }
@@ -174,6 +174,7 @@ main {
 .ctaButton p {
     color: white;
     font-weight: 900;
+    font-size: 16px;
     text-transform: uppercase;
     text-shadow: 0 4px 8px hsla(4, 80%, 16%, 0.4);
 }
@@ -316,6 +317,11 @@ footer li img{
 }
 
 @media screen and (min-width: 768px) {
+
+    h2, h3, h4, h5, h6, p, a{
+        font-size: 16px;   
+    }
+
     .dropdown-content{
         min-width: 20%;
     }
@@ -338,12 +344,17 @@ footer li img{
 
     .hero h2{
         text-align: left;
+        font-size: 48px;
+    }
+
+    .heroText{
+        font-size: 24px;
     }
 
     .ctaButton{
         margin: 0 0 16px 0;
     }
-    
+
 }
 
 @media screen and (min-width: 992px) {

@@ -24,12 +24,21 @@ h3, h4, h5, h6, p, a{
 
 /*HEADER*/
 
+/*HEADER*/
+
 header {
-    box-shadow: 4px 4px 16px hsla(0, 0%, 0%, 0.12);
+    background-color: hsl(191, 96%, 24%);
 }
 
 .headerRow {
+    width: 100%;
     padding: 12px 0;
+    position: relative;
+    margin: 0;
+}
+
+.headerRow .col{
+    padding: 0;
 }
 
 .logoHeader {
@@ -44,31 +53,36 @@ header {
 
 .dropdown {
     display: inline;
-    padding-top: 10px ;
+    padding-top: 10px;
     vertical-align: center;
 }
 
 .dropbtn {
     font-family: 'Material Icons';
     font-size: 24px;  /* Preferred icon size */
-    color: hsl(191,75%,44%);
+    color: white;
     cursor: pointer;
     margin: 0 0 0 8px;
 }
 
 .dropdown p:hover, .dropdown p:focus {
-    color: hsl(191,96%,24%);
+    color: hsl(191,75%,44%);
+}
+
+.navMenu{
+    position: relative;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: hsl(162,73%,28%);
+    background-color: hsl(191,96%,13%);
     min-width: 30%;
     box-shadow: 4px 4px 16px hsla(191, 96%, 16%, 0.32),
                 4px 4px 8px hsla(191, 96%, 16%, 0.12);
     z-index: 2;
-    right: 0;
+    right: -15px;
+    top: -24px;
 }
 
 .dropdown-content a{
@@ -79,7 +93,7 @@ header {
 }
 
 .dropdown-content a:hover{
-    background-color: hsl(160,41%,54%);
+    background-color: hsl(191,75%,44%);
 }
 
 .searchBar {
@@ -106,7 +120,8 @@ header {
 
 main {
     background-color: hsl(0, 0%, 96%);
-    height: calc(100% - 132.64px);
+    height: 100%;
+    overflow: hidden;
 }
 
 
@@ -158,10 +173,10 @@ main {
 /*FOOTER*/
 
 footer{
-    background-color: hsl(191, 96%, 24%);
+    background-color: hsl(191, 96%, 13%);
     padding: 20px 12px;
     position: relative;
-    bottom: 0;
+    justify-content: space-between;
 }
 
 .divider{
@@ -174,16 +189,12 @@ footer{
 
 }
 
-.footerLogo {
-    width: 100px;
+.footerRow{
+    justify-content: space-between;
 }
 
-footer nav{
-    display: inline-block;
-    vertical-align: center;
-    position: absolute;
-    right: 0;
-    margin: 2.75px 12px 0 0;
+.footerLogo {
+    width: 100px;
 }
 
 footer li{
@@ -193,4 +204,46 @@ footer li{
 footer li img{
     height: 24px;
     margin-left: 8px;
+}
+
+@media screen and (min-width: 576px) {
+    main{
+        height: 100%;
+    }
+    
+    .sm-to-xl{
+    margin: 0 auto;
+    max-width: 540px;
+    padding: 0 15px;
+}
+}
+
+@media screen and (min-width: 768px) {
+
+h2, h3, h4, h5, h6, p, a{
+    font-size: 16px;   
+}   
+    
+.dropdown-content{
+    min-width: 20%;
+}
+}
+
+@media screen and (min-width: 992px) {
+.dropdown-content{
+    min-width: 15%;
+}
+
+.sm-to-xl{
+    margin: 0 auto;
+    max-width: 960px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+.sm-to-xl{
+    
+    margin: 0 auto;
+    max-width: 1140px;
+}
 }
