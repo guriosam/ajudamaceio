@@ -139,13 +139,13 @@ main {
     text-align: center;
     margin-bottom: 12px;
     font-family:"Signika Negative", sans-serif;
-    font-size: 32px;
+    font-size: 36px;
     color: white;
     text-shadow: 0px 4px 0px hsla(191, 96%, 16%,0.32);
 }
 
 .heroText {
-    font-size: 16px;
+    font-size: 20px;
     color: white;
     display: inline-block;
     line-height: 1.15em;
@@ -327,8 +327,7 @@ footer li img{
     }
     
     .bgHero{
-        height: 40%;
-        background-position-y:30% ;
+         background-position-y:30% ;
     }
     
     .sm-to-xl{
@@ -339,7 +338,7 @@ footer li img{
     .hero{
         text-align: left;
         justify-content: left;
-        width: 55%;
+        width: 70%;
     }
 
     .hero h2{
@@ -365,6 +364,10 @@ footer li img{
     .sm-to-xl{
         margin: 0 auto;
         max-width: 960px;
+    }
+
+    .hero{
+        width: 55%;
     }
 }
 

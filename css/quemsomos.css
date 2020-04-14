@@ -149,7 +149,7 @@ main {
 }
 
 .cover {
-    color: white;
+    color:hsl(194,96%,71%);
     text-align: center;
 }
 
@@ -162,7 +162,7 @@ main {
 .titleCover{
     font-size: 28px;
     font-weight: 700;
-    color: hsl(191,75%,44%);
+    color: hsl(191,75%,100%);
     margin-top: 20px;
     margin-bottom: .75em;
 

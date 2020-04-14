@@ -185,19 +185,23 @@ main {
     padding: 12px 0;
     margin-bottom: 16px;
     flex-direction: row;
-    width: 100%;
+    min-width: 100%;
     height: 124px
 }
 
-.projectImg {
-    border-radius: 2px;
-    background-image: url(../img/project1Img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-left: 15px;
-    width: 100px;
-    height: 100px;
+.projectBg {
+    max-height: 100%;
+    width: 30%;    
+    overflow: hidden;
+    justify-content: center;
     flex-shrink: 0;
+    margin-left: 12px;
+    border-radius: 2px;
+}
+
+.projectImg {
+    height: 100%;
+    object-fit: cover;
 }
 
 .projectContent{
@@ -318,7 +322,11 @@ h2, h3, h4, h5, h6, p, a{
     flex-direction: column;
     max-width: 47%;
     min-width: 47%;
-    height: 300px; 
+    height: 280px; 
+}
+
+.projectBg{
+    width: calc(100% - 24px);
 }
 
 .projectImg{
@@ -339,10 +347,16 @@ h2, h3, h4, h5, h6, p, a{
 
 @media screen and (min-width: 768px) {
 
+    .titleSection{
+        font-size: 32px;
+        margin-bottom: .5em;
+    }
+
     .projectBox{
         flex-direction: column;
-        width: 100%;
-        height: 300px;    
+        max-width: 32%;
+        min-width: 32%;
+        height: 280px;    
     }
 }
 
@@ -358,9 +372,16 @@ h2, h3, h4, h5, h6, p, a{
 }
 
 @media screen and (min-width: 1200px) {
-.sm-to-xl{
-    
+.sm-to-xl{    
     margin: 0 auto;
     max-width: 1140px;
 }
+
+.projectBox{
+    flex-direction: column;
+    max-width: 32%;
+    min-width: 32%;
+    height: 280px;    
+}
+
 }

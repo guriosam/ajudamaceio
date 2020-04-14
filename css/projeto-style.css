@@ -113,16 +113,16 @@ main {
 }
 
 .breadcrumb{
-    background-color: hsl(0, 0%, 99%);
+    background-color: hsla(194, 100%, 86%, 0.25);
     margin-bottom: 0;
     border-radius: 0;
     width: 100%;
     padding: .5em 15px;
-    box-shadow: 0 2px 12px hsla(0, 0%, 0%, 0.04);
+    border-bottom: solid 1px hsla(194, 100%, 86%, 0.5);
 }
 
 .breadcrumb-item a{
-    color: hsl(191,0%,75%);
+    color: hsl(194,96%,71%);
 }
 
 .breadcrumb-item.active{
@@ -132,15 +132,25 @@ main {
 }
 
 .breadcrumb-item.active::before{
-    color: hsl(191,0%,75%);
+    color: hsl(194,96%,71%);
 }
 
+.projectContainer{
+    background-color: hsl(0, 0%, 99%);
+    box-shadow: 0 0 12px hsla(0, 0%, 0%, 0.04);
+}
 
 .projectBg {
-    background-image: url(../img/project1Img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 30vh;
+    max-height: 20vw;
+    min-height: 30vh;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.projectImg{
+    display: block;
+    width: 100vw;
+    object-fit: cover;
 }
 
 .verticalDir {
@@ -199,7 +209,7 @@ main {
 
 .titleOrange{
     text-transform: uppercase;
-    color: hsl(4,80%,59%);
+    color: hsl(0,96%,59%);
     margin-bottom: 8px;
 }
 
@@ -214,7 +224,7 @@ main {
 }
 
 .bodyOrange{
-    color: hsl(29,95%,44%);
+    color: hsl(0,89%,35%);
     margin-bottom: 16px;
 }
 
@@ -226,7 +236,7 @@ main {
     background-color: hsl(140, 65%, 80%);
     border-radius: 8px;
     padding-top: 12px;
-    margin: 12px 0 20px 0;
+    margin: 12px auto 20px auto;
 }
 
 .bgOrange{
@@ -239,6 +249,13 @@ main {
 .socialLogo{
     height: 24px;
     margin-bottom: 20px;
+    margin-right: 16px;
+}
+
+.msgLogo{
+    height: 16px;
+    margin-left: 4px;
+    vertical-align: baseline;
 }
 
 .generalButton {
@@ -259,6 +276,7 @@ main {
     color: white;
     margin: 0;
 }
+
 /*FOOTER*/
 
 footer{
@@ -295,15 +313,6 @@ footer li img{
     margin-left: 8px;
 }
 
-@media screen and (min-width: 576px) {
-    
-    .sm-to-xl{
-    margin: 0 auto;
-    max-width: 540px;
-    padding: 0 15px;
-}
-}
-
 @media screen and (min-width: 768px) {
 
 h2, h3, h4, h5, h6, p, a{
@@ -326,14 +335,21 @@ h2, h3, h4, h5, h6, p, a{
 
 .sm-to-xl{
     margin: 0 auto;
-    max-width: 960px;
-}
+    max-width: 720px;
 }
 
-@media screen and (min-width: 1200px) {
+.neg-margin{
+    margin-left:  -15px;
+    margin-right: -15px;
+}
+
+}
+
+@media screen and (min-width: 1200px) {   
 .sm-to-xl{
     
     margin: 0 auto;
-    max-width: 1140px;
+    max-width: 720px;
+    padding: 0;
 }
 }
