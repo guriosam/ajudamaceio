@@ -110,7 +110,7 @@ h3, h4, h5, h6, p, a{
 
 main {
     background-color: hsl(0, 0%, 96%);
-    height: 100%
+    height: 100%;
 }
 
 .bgHero{
@@ -209,6 +209,7 @@ main {
 }
 
 .projectBox{
+    min-width: 100%;
     display: flex;
     text-align: left;
     border-radius: 4px;
@@ -220,11 +221,29 @@ main {
     flex-direction: row;
 }
 
-.projectImg {
-    border-radius: 2px;
-    background-image: url(../img/project1Img.jpg);
+#project1{
+    background-image: url(../img/projeto01-thumb.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-x: 50% ;
+}
+
+#project2{
+    background-image: url(../img/projeto02-thumb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 50% ;
+}
+
+#project3{
+    background-image: url(../img/projeto03-thumb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 50% ;
+}
+
+.projectImg {
+    border-radius: 2px;
     margin-left: 15px;
 }
 
@@ -327,7 +346,8 @@ footer li img{
     }
     
     .bgHero{
-         background-position-y:30% ;
+        background-image: url(../img/heroImg-md.jpg);
+        background-position-y:30% ;
     }
     
     .sm-to-xl{
@@ -354,11 +374,24 @@ footer li img{
         margin: 0 0 16px 0;
     }
 
+    .projectSection{
+        justify-content: space-between;
+    }
+
+    .projectBox{
+        max-width: 49%;
+        min-width: 47%;
+    }
+
 }
 
 @media screen and (min-width: 992px) {
     .dropdown-content{
         min-width: 15%;
+    }
+
+    .bgHero{
+        background-image: url(../img/heroImg-lg.jpg);
     }
     
     .sm-to-xl{
@@ -373,6 +406,7 @@ footer li img{
 
 @media screen and (min-width: 1200px) {
     .bgHero{
+        background-image: url(../img/heroImg-lg.jpg);
         height: -webkit-max-content;
         height: -moz-max-content;
         height: max-content;
@@ -383,5 +417,10 @@ footer li img{
         
         margin: 0 auto;
         max-width: 1140px;
+    }
+
+    .projectBox{
+        max-width: 32%;
+        min-width: 31%;
     }
 }

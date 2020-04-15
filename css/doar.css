@@ -190,18 +190,39 @@ main {
 }
 
 .projectBg {
-    max-height: 100%;
-    width: 30%;    
-    overflow: hidden;
-    justify-content: center;
-    flex-shrink: 0;
+    min-height: 100%;
     margin-left: 12px;
     border-radius: 2px;
 }
 
-.projectImg {
-    height: 100%;
-    object-fit: cover;
+#project1{
+    width: calc(100% - 24px);
+    margin-bottom: 12px;
+    background-image: url(../img/projeto01-thumb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+
+#project2{
+    width: calc(100% - 24px);
+    margin-bottom: 12px;
+    background-image: url(../img/projeto02-thumb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+
+#project3{
+    width: calc(100% - 24px);
+    margin-bottom: 12px;
+    background-image: url(../img/projeto03-thumb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
 }
 
 .projectContent{
@@ -326,13 +347,7 @@ h2, h3, h4, h5, h6, p, a{
 }
 
 .projectBg{
-    width: calc(100% - 24px);
-}
-
-.projectImg{
-    height: 120px;
-    width: 100%;
-    margin: 0 0 12px 0;
+    min-height: 50%;
 }
 
 .projectContent h4{
