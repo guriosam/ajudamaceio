@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Ajuda Maceió - Projeto Erê</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Lilita+One&family=Rubik&family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="headerRow row">
+                <div class="col">
+                    <a href="../index.html"><img class="logoHeader" src="../img/colorLogo.svg"></a>
+                </div>
+                <div class="col">
+                    <nav class="navBar">
+                        <!-- <div class="dropdown">
+                            <p onclick="searchFunction()" class="dropbtn">search</p>
+                        </div>   -->
+                        <div class="dropdown">
+                            <p onclick="menuFunction()" class="dropbtn">menu</p>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="navMenu row">                
+                <div id="dropdownMenu" class="dropdown-content">
+                    <a href="../pages/quemsomos.html">Quem Somos</a>
+                    <a href="../pages/contato.html">Contato</a>
+                    <a href="../pages/doar.html">Doar</a>
+                </div>
+                <div id="dropdownSearch" class="searchBar">
+                    <input type="text" placeholder="Busque um projeto ou organização">
+                </div>                
+            </div>
+        </div>                                             
+    </header>
+    <main>
+        <div class="projectContainer sm-to-xl container">                  
+            <div class="row">
+                <div class="sm-to-xl col">
+                    <div class="container">
+                        <div class="verticalDir row">
+                            <h3 class="titleSectionBlue">Painel Admin</h3>
+                            <h4 class="titleBlue">Adicionando Projetos</h4>
+                        </div>
+                        <div class="verticalDir row">
+                            <form id="generalInfo">
+                                <label for="pTitle">Nome do Projeto:</label><br>
+                                <input type="text" id="projectTitle" name="projectTitle" required><br>
+                                <label for="coverAddress">Endereço (Resumo):</label><br>
+                                <input type="text" id="coverAddress" name="coverAddress" placeholder="Bairro - Cidade" required><br>
+                                <label for="targetAudience">Atende ao Público:</label><br>
+                                <textarea class="form-control" id="targetAudience" name="targetAudience" rows="3" required></textarea><br>
+                                <label for="projectDescription">Descrição do Projeto:</label><br>
+                                <textarea class="form-control" id="projectDescription" name="projectDescription" rows="15" required></textarea><br>
+                                <label for="projectContato">Contato:</label><br>
+                                <textarea class="form-control" type="text" id="projectContact" name="projectContact" rows="7" required></textarea><br>
+                                <label for="projectAddress">Endereço:</label><br>
+                                <textarea class="form-control" type="text" id="projectAddress" name="projectAddress" placeholder="Ex.: Rua Tal, 00, Bairro. Cidade-XX, CEP 00000-000" rows="5" required></textarea><br>
+                                <label for="socialMidia">Redes Sociais:</label><br>
+                                <textarea class="form-control" type="text" id="socialMidia" name="socialMidia" placeholder="Link da Rede Social" rows="10"></textarea><br><br>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="container bgGreen">
+                        <h5 class="titleSectionGreen">Dados bancários para transferência</h5>
+                        <div class="dividerGreen"></div>                        
+                            <div>
+                                <label>Tipo de Conta:</label><br>
+                                <input class="radio" type="radio" id="corrente" name="bankAcc" value="corrente">
+                                <label for="corrente">Conta Corrente</label><br>
+                                <input class="radio" type="radio" id="poupanca" name="bankAcc" value="poupanca">
+                                <label for="poupanca">Conta Poupança</label>
+                            </div>
+                            <div>
+                                <label for="bankName">Nome do Banco:</label><br>
+                                <input type="text" id="bankName" name="bankName"><br>
+                            </div>
+                            <div>
+                                <label>Pessoa física, jurídica ou "ONG":</label><br>
+                                <input class="radio" type="radio" id="fisica" name="personType" value="fisica">
+                                <label for="fisica">Pessoa Física</label><br>
+                                <input class="radio" type="radio" id="juridica" name="personType" value="juridica">
+                                <label for="juridica">Pessoa Jurídica</label><br>
+                                <input class="radio" type="radio" id="ong" name="personType" value="ong">
+                                <label for="ong">ONG</label><br>
+                            </div>
+                            <div>
+                                <label for="bankAgency">Agência:</label><br>
+                                <input type="text" id="bankAgency" name="bankAgency"><br>
+                            </div>
+                            <div>
+                                <label for="bankAccNumber">Conta:</label><br>
+                                <input type="text" id="bankAccNumber" name="bankAccNumber"><br>
+                            </div>                      
+                    </div>
+                    <div class="container bgOrange">
+                        <h5 class="titleSectionOrange">Informações para doação</h5>
+                        <div class="dividerOrange"></div>
+                        <div>
+                            <label">Buscar Doações</label><br>
+                            <input class="radio" type="radio" id="donation-yes" name="donation" value="yes">
+                            <label for="donation-yes">Sim</label><br>
+                            <input class="radio" type="radio" id="donation-no" name="donation" value="no">
+                            <label for="donation-no">Não</label><br> 
+                        </div>
+                        <div>
+                            <label for="donationItems">Itens Solicitados:</label><br>
+                            <textarea class="form-control" type="text" id="donationItems" name="donationItems" rows="10"></textarea>
+                        </div>   
+                    </div>
+                </div>  
+            </div>                  
+        </div>
+    </main>
+    <footer>
+        <div class="divider"></div>
+        <div class="container">
+            <div class="footerRow row">
+            <img class="footerLogo" src="../img/whiteLogo.svg">
+            <nav>
+                <ul>
+                    <li><img src="../img/instaLogo.png"></li>
+                    <li><img src="../img/faceLogo.png"></li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/principal.js"></script>
+    <script src="../js/form.js"></script>    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -30,6 +30,7 @@
             </div>
             <div class="navMenu row">                
                 <div id="dropdownMenu" class="dropdown-content">
+                    <a href="../index.html">Home</a>
                     <a href="../pages/quemsomos.html">Quem Somos</a>
                     <a href="../pages/contato.html">Contato</a>
                 </div>
@@ -53,36 +54,36 @@
         </div>  
         <div class="contentBox container">
             <div class="projectSection row">                
-                <div class="projectBox col">
+                <div class="projectBox col clickable">
+                    <a href="../pages/projetos/projeto01.html"></a>
                     <div id="project1" class="projectBg"></div>
                     <div class="projectContent">
-                        <a href="../pages/projetos/projeto01.html">
                         <h4>Projeto Erê</h4>                            
                         <h5>Prado - Maceió</h5>
                         <h6>Atende ao público</h6>
-                        <p>Crianças e Adolescentes em vulnerabilidade social</p></a>
+                        <p>Crianças e Adolescentes em vulnerabilidade social</p>
                     </div>                  
                 </div>
-                <div class="projectBox col">
+                <div class="projectBox col clickable">
+                    <a href="../pages/projetos/projeto02.html"></a>
                     <div id="project2" class="projectBg"></div>
                     <div class="projectContent">
-                        <a href="../pages/projetos/projeto02.html">
                         <h4>Casa de Ranquines</h4>                            
                         <h5>Farol - Maceió</h5>
                         <h6>Atende ao público</h6>
-                        <p>Pessoas carentes de bens e serviços essenciais</p></a>
+                        <p>Pessoas carentes de bens e serviços essenciais</p>
                     </div>
                 </div></a>
-                <div class="projectBox col">
+                <div class="projectBox col clickable">
+                    <a href="../pages/projetos/projeto03.html"></a>
                     <div id="project3" class="projectImg"></div>
                     <div class="projectContent">
-                        <a href="../pages/projetos/projeto03.html">
                         <h4>Creche Escola Pró-Amor</h4>                            
                         <h5>Barro Duro - Maceió</h5>
                         <h6>Atende ao público</h6>
-                        <p>Crianças com desnutrição e em situação de vulnerabilidade social</p></a>
+                        <p>Crianças com desnutrição e em situação de vulnerabilidade social</p>
                     </div>
-                </div>        
+                </div>                
             </div>                
         </div>
     </main>
@@ -90,7 +91,7 @@
         <div class="divider"></div>
         <div class="container">
             <div class="footerRow row">
-            <img class="footerLogo" src="../img/whiteLogo.svg">
+            <a href="../index.html"><img class="footerLogo" src="../img/whiteLogo.svg"></a>            
             <nav>
                 <ul>
                     <li><img src="../img/instaLogo.png"></li>
@@ -104,5 +105,11 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+    $('.clickable').click(function(){
+    window.location = $(this).find("a").attr("href"); 
+    return false;
+    });
+    </script>
 </body>
 </html>
