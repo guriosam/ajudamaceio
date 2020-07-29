@@ -1,11 +1,5 @@
 html, body{
-    overflow-x: hidden;
-}
-
-body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    height: 100%;
 }
 
 h3, h4, h5, h6, p, a, li{
@@ -16,16 +10,16 @@ h3, h4, h5, h6, p, a, li{
 }
 
 ::placeholder {
-    color: hsl(140, 65%, 80%);
+    color: hsl(194,96%,71%);
     opacity: 1;
 }
 
 :-ms-input-placeholder {
-        color: hsl(140, 65%, 80%);
+        color: hsl(194,96%,71%);
 }
 
 ::-ms-input-placeholder {
-    color: hsl(140, 65%, 80%);
+    color: hsl(194,96%,71%);
 }
 
 /*HEADER*/
@@ -115,7 +109,7 @@ h3, h4, h5, h6, p, a, li{
 
 main {
     background-color: hsl(0, 0%, 96%);
-    flex:1 
+    height: fit-content;
 }
 
 .breadcrumb{
@@ -242,6 +236,7 @@ main {
     background-color: hsl(140, 65%, 80%);
     border-radius: 8px;
     padding-top: 12px;
+    padding-bottom: 20px;
     margin: 12px auto 20px auto;
 }
 
@@ -249,6 +244,7 @@ main {
     background-color: hsl(22, 94%, 81%);
     border-radius: 8px;
     padding-top: 12px;
+    padding-bottom: 20px;
     margin: 12px 0 40px 0;
 }
 
@@ -281,6 +277,28 @@ main {
     text-transform: uppercase;
     color: white;
     margin: 0;
+}
+
+/*FORM*/
+
+label{
+    color: hsl(191,75%,44%);
+}
+
+input{
+    width: 100%;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: solid 1px hsl(0, 0%, 90%);
+    margin-bottom: 12px;
+}
+
+.radio{
+    width: min-content;
+}
+
+.biggerInput{
+    height:max-content;
 }
 
 /*FOOTER*/

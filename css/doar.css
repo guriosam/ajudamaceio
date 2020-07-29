@@ -1,6 +1,11 @@
 html, body{
-    height: 100%;
     overflow-x: hidden;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 h3, h4, h5, h6, p, a{
@@ -120,7 +125,7 @@ header {
 
 main {
     background-color: hsl(0, 0%, 96%);
-    height: fit-content;
+    flex: 1;
     padding-bottom: 40px;
 }
 
@@ -152,6 +157,10 @@ main {
     box-shadow: 0 8px 8px inset hsla(191, 96%, 16%, 0.16);
     position: absolute;
     bottom: -40px;
+}
+
+.clickable{    
+    cursor: pointer;
 }
 
 .contentBox{
@@ -186,7 +195,7 @@ main {
     margin-bottom: 16px;
     flex-direction: row;
     min-width: 100%;
-    height: 124px
+    height: 124px;
 }
 
 .projectBg {
@@ -286,7 +295,6 @@ footer{
     position: absolute;
     top: -2px;
     left: 0;
-
 }
 
 .footerRow{
@@ -308,7 +316,7 @@ footer li img{
 
 @media screen and (min-width: 576px) {
     main{
-        height: 100%;
+        height: max-content;
     }
     
     .sm-to-xl{
