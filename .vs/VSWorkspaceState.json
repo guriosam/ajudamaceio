@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\css",
+    "\\js",
+    "\\pages",
+    "\\pages\\projetos"
   ],
+  "SelectedNode": "\\pages\\doar.html",
   "PreviewInSolutionExplorer": false
 }

@@ -202,32 +202,8 @@ main {
     min-height: 100%;
     margin-left: 12px;
     border-radius: 2px;
-}
-
-#project1{
     width: calc(100% - 24px);
     margin-bottom: 12px;
-    background-image: url(../img/projeto01-thumb.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: 50%;
-    background-position-y: 50%;
-}
-
-#project2{
-    width: calc(100% - 24px);
-    margin-bottom: 12px;
-    background-image: url(../img/projeto02-thumb.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: 50%;
-    background-position-y: 50%;
-}
-
-#project3{
-    width: calc(100% - 24px);
-    margin-bottom: 12px;
-    background-image: url(../img/projeto03-thumb.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 50%;
